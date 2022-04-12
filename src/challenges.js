@@ -6,15 +6,15 @@ function compareTrue(valor1, valor2) {
 function calcArea(heigth, base) {
 return ((base * heigth) / 2);
 }
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let resultado = string.split(" ")
+  return resultado;
 }
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
 
 // Desafio 5
