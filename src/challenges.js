@@ -2,6 +2,7 @@
 function compareTrue() {
   // seu código aqui
 }
+console.log("test");
 
 // Desafio 2
 function calcArea() {
