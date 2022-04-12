@@ -3,7 +3,8 @@ function compareTrue(valor1, valor2) {
   return ((valor1 === true) && (valor2 === true));
 }
 // Desafio 2 (base * altura) / 2.
-function calcArea(base, height) {
+function calcArea(heigth, base) {
+return ((base * heigth) / 2);
 }
 
 // Desafio 3
