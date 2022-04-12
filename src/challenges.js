@@ -13,8 +13,10 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  
+function concatName(string) {
+  let ultimoItem = string[string.length-1];
+  let primeiroItem = [string[0]];
+  return (ultimoItem + ", " + primeiroItem);
 }
 
 // Desafio 5
