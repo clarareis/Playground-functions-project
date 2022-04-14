@@ -43,14 +43,32 @@ let comparate = numeros[0];
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+let distanceCat1 = Math.abs(mouse-cat1);
+let distanceCat2 = Math.abs(mouse-cat2);
+
+if (distanceCat1 < distanceCat2){
+return 'cat1'
+}
+if (distanceCat1 > distanceCat2){
+  return 'cat2'
+}
+else {
+  return "os gatos trombam e o rato foge"
+}
+// calcular a distância do cat1 para o mouse
+// calcular a distância do cat2 para o mouse
+
+// se o gato1 estiver mais perto - retorna cat1
+// se o gato2 estiver mais perto - retorna cat2
+// se a distância entre os gatos forem iguais - retorna "os gatos trombam e o rato foge"
+
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(arrayNumeros) {
+  
+return array}
 
 // Desafio 9
 function encode() {
