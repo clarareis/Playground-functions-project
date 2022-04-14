@@ -21,13 +21,25 @@ function concatName(string) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let quantidadePontos = ((wins*3) + (ties))
+  let quantidadePontos = ((wins*3) + (ties));
   return quantidadePontos;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+let quantidade = 0;
+let comparate = numeros[0];
+  for (let index = 0; index < numeros.length; index +=1){
+    if (comparate < numeros[index]){
+       comparate = numeros[index];
+    }
+  }
+  for (let index2 of numeros){
+    if (comparate === index2){
+        quantidade +=1;
+    }
+  }
+  return quantidade;
 }
 
 // Desafio 7
