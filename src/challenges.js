@@ -56,13 +56,6 @@ if (distanceCat1 > distanceCat2){
 else {
   return "os gatos trombam e o rato foge"
 }
-// calcular a distância do cat1 para o mouse
-// calcular a distância do cat2 para o mouse
-
-// se o gato1 estiver mais perto - retorna cat1
-// se o gato2 estiver mais perto - retorna cat2
-// se a distância entre os gatos forem iguais - retorna "os gatos trombam e o rato foge"
-
 }
 
 // Desafio 8
