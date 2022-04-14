@@ -58,10 +58,30 @@ else {
 }
 }
 
-// Desafio 8
+// Desafio 8 // ver log erro para concluir
 function fizzBuzz(arrayNumeros) {
+
+for (index = 0; index < arrayNumeros.length; index +=1){
+  if (arrayNumeros[index] % 3){
+return '"fizz"';
+  }
+  if (arrayNumeros[index] % 5){
+return '"buzz"';
+  }
+  if ((arrayNumeros[index] % 3) && (arrayNumeros[index] %5)){
+return '"fizzBuzz"';
+  }
+  else {
+return '"bug"';
+  }
+}
+  //Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar `["bug!", "fizzBuzz", "bug!", "fizz", "fizzBuzz"]`.
+//cada número do array divisivel por 3 - return `"fizz"`
+//cada número do array divisivel por 5 - return `"buzz"`
+// se o número for divisível por 3 e 5 - return `"fizzBuzz"`
+// se o número não for divisível nem por 3 nem por 5 - return `"bug!"`
   
-return array}
+}
 
 // Desafio 9
 function encode() {
