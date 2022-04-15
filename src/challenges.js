@@ -78,24 +78,60 @@ let result = [];
 return result;
 }
 
-  //Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar `["bug!", "fizzBuzz", "bug!", "fizz", "fizzBuzz"]`.
-//cada número do array divisivel por 3 - return `"fizz"`
-//cada número do array divisivel por 5 - return `"buzz"`
-// se o número for divisível por 3 e 5 - return `"fizzBuzz"`
-// se o número não for divisível nem por 3 nem por 5 - return `"bug!"`
-  
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase1) {
+  let novaFrase1 = "";
+  for (let index = 0; index < frase1.length; index +=1) {
+  if (frase1[index] === "a"){
+    novaFrase1 += "1"
+  }
+  else if (frase1[index] === "e"){
+    novaFrase1 += "2"
+  }
+  else if (frase1[index] === "i"){
+    novaFrase1 += "3"
+  }
+  else if (frase1[index] === "o"){
+    novaFrase1 += "4"
+  }
+  else if (frase1[index] === "u"){
+    novaFrase1 += "5"
+  }
+    else {
+      novaFrase1 += frase1[index]
 }
-function decode() {
-  // seu código aqui
 }
+return novaFrase1;
+}
+function decode(frase2) {
+  let novaFrase2 = "";
+  for (let index = 0; index < frase2.length; index +=1) {
+  if (frase2[index] === "1"){
+    novaFrase2 += "a"
+  }
+  else if (frase2[index] === "2"){
+    novaFrase2 += "e"
+  }
+  else if (frase2[index] === "3"){
+    novaFrase2 += "i"  }
+  else if (frase2[index] === "4"){
+    novaFrase2 += "o"
+  }
+  else if (frase2[index] === "5"){
+    novaFrase2 += "u"
+  }
+    else {
+      novaFrase2 += frase2[index]
+}
+}
+return novaFrase2;
+}
+
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnology, name) {
+  //let tecnology = [];
+
 }
 
 module.exports = {
