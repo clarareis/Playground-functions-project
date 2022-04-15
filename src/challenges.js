@@ -44,7 +44,7 @@ let comparate = numeros[0];
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-let distanceCat1 = Math.abs(mouse-cat1);
+let distanceCat1 = Math.abs(mouse-cat1); //função Math.abs converte resultado do nº negativo em positivo.
 let distanceCat2 = Math.abs(mouse-cat2);
 
 if (distanceCat1 < distanceCat2){
@@ -58,30 +58,32 @@ else {
 }
 }
 
-// Desafio 8 // ver log erro para concluir
+// Desafio 8 
 function fizzBuzz(arrayNumeros) {
-
-for (index = 0; index < arrayNumeros.length; index +=1){
-  if (arrayNumeros[index] % 3){
-return '"fizz"';
+let result = [];
+ for (let index = 0; index < arrayNumeros.length; index +=1) {
+  if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0){
+    result.push("fizzBuzz");
   }
-  if (arrayNumeros[index] % 5){
-return '"buzz"';
+  else if (arrayNumeros[index] % 3 === 0){
+    result.push("fizz");
   }
-  if ((arrayNumeros[index] % 3) && (arrayNumeros[index] %5)){
-return '"fizzBuzz"';
+  else if (arrayNumeros[index] % 5 === 0){
+    result.push("buzz");
   }
   else {
-return '"bug"';
+    result.push("bug!");
   }
 }
+return result;
+}
+
   //Exemplo: caso o parâmetro seja [2, 15, 7, 9, 45], sua função deverá retornar `["bug!", "fizzBuzz", "bug!", "fizz", "fizzBuzz"]`.
 //cada número do array divisivel por 3 - return `"fizz"`
 //cada número do array divisivel por 5 - return `"buzz"`
 // se o número for divisível por 3 e 5 - return `"fizzBuzz"`
 // se o número não for divisível nem por 3 nem por 5 - return `"bug!"`
   
-}
 
 // Desafio 9
 function encode() {
