@@ -129,7 +129,7 @@ return novaFrase2;
 
 
 // Desafio 10
-function techList(tecnology, name) {
+function techList(tech, name) {
   //let tecnology = [];
 
 }
